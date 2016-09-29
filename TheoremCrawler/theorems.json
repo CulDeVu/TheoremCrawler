@@ -1,0 +1,84 @@
+{
+	"theorems" : [{
+		"quant": "forall",
+		"varid": 0,
+		"expr": "=>",
+		"args": [{
+			"quant": "",
+			"varid": -1,
+			"expr": "in",
+			"args": [{
+				"quant": "",
+				"varid": 0,
+				"expr": "",
+				"args": []
+			}, {
+				"quant": "",
+				"varid": -1,
+				"expr": "Bools",
+				"args": []
+			}]
+		},{
+			"quant": "",
+			"varid": -1,
+			"expr": "or",
+			"args": [{
+				"quant": "",
+				"varid": 0,
+				"expr": "",
+				"args": []
+			},{
+				"quant": "",
+				"varid": -1,
+				"expr": "not",
+				"args": [{
+					"quant": "",
+					"varid": 0,
+					"expr": "",
+					"args": []
+				}]
+			}]
+		}]
+	},{
+		"quant": "forall",
+		"varid": 0,
+		"expr": "=>",
+		"args": [{
+			"quant": "",
+			"varid": -1,
+			"expr": "in",
+			"args": [{
+				"quant": "",
+				"varid": 0,
+				"expr": "",
+				"args": []
+			}, {
+				"quant": "",
+				"varid": -1,
+				"expr": "Nats",
+				"args": []
+			}]
+		},{
+			"quant": "",
+			"varid": -1,
+			"expr": "=",
+			"args": [{
+				"quant": "",
+				"varid": 0,
+				"expr": "",
+				"args": []
+			},{
+				"quant": "",
+				"varid": 0,
+				"expr": "",
+				"args": []
+			}]
+		}]
+	}],
+	"longform": [
+		"forall(_0, =>(in(_0, Bools), or(_0, not(_0))))",
+		"forall(_0,=>(in(_0,Nats),=(_0,_0)))",
+		"in(0,Nats)",
+		"forall(_0, forall(_1, =>(=(_0,_1),=(_1,_0))))"
+	]
+}
